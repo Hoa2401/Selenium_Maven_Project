@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="automation.testsuite.BTVN_Day12_Dropdown_Menu">
+      <class name="automation.testsuite.BTVN_Day12_3">
         <methods>
-          <include name="handleDropdownMenu"/>
+          <include name="chooseDropMulti"/>
         </methods>
-      </class> <!-- automation.testsuite.BTVN_Day12_Dropdown_Menu -->
+      </class> <!-- automation.testsuite.BTVN_Day12_3 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
