@@ -3,6 +3,7 @@ import java.time.Duration;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.*;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.*;
@@ -19,7 +20,14 @@ public class CommonBase {
 	driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(30));
 	driver.manage().window().maximize();
 	return driver;
-	
+	}
+	public WebDriver initFirefoxDriver(String Url) {
+		System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir") + "\\driver\\geckodriver.exe");
+		driver = new FirefoxDriver();
+		driver.get(Url);
+		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(30));
+		driver.manage().window().maximize();
+		return driver;
 	}
 	public void scrollToElement(By locator) {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
@@ -30,5 +38,11 @@ public class CommonBase {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
 		wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
 		return driver.findElement(locator);
+	}
+	
+	public void closeDriver()
+	{
+		if(driver!=null)
+			driver.close();
 	}
 }

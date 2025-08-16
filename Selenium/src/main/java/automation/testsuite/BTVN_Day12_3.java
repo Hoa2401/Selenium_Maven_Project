@@ -2,6 +2,8 @@ package automation.testsuite;
 
 import static org.testng.Assert.assertEquals;
 
+import java.util.List;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
@@ -27,12 +29,13 @@ public class BTVN_Day12_3 extends CommonBase {
 		assertEquals(actualText1, "Automation");
 		
 		//2.Chon option "Manual" bang ham selectByValue
-		driver.navigate().refresh();// f5 lại trình duyệt
-		scrollToElement(By.xpath("//label[text()='Biography:']"));
-		WebElement dropMulti2 =driver.findElement(By.xpath("//select[@name='user_job2']"));
-		Select menuDrop2 = new Select(dropMulti2);
-		menuDrop2.selectByValue("manual");
-		String actualText2 = menuDrop2.getFirstSelectedOption().getText();
+//		driver.navigate().refresh();// f5 lại trình duyệt
+//		scrollToElement(By.xpath("//label[text()='Biography:']"));
+//		WebElement dropMulti2 =driver.findElement(By.xpath("//select[@name='user_job2']"));
+//		Select menuDrop2 = new Select(dropMulti2);
+		menuDrop.selectByValue("manual");
+		List<WebElement> selectedOptions = menuDrop.getAllSelectedOptions();// lấy tất cả option được chọn
+		String actualText2 = selectedOptions.get(selectedOptions.size()-1).getText();//Lấy text cuối cùng vừa chọn
 		assertEquals(actualText2, "Manual");
 	}
 	@AfterMethod
