@@ -14,7 +14,7 @@ public class BTVN_Day8 extends CommonBase  {
 	public void getElementById()
 	{
 		driver = initChromeDriver(CT_PageURL.SELECTOR_HUB_URL);
-		WebElement emailElement = driver.findElement(By.id("shub58"));
+		WebElement emailElement = driver.findElement(By.xpath("(//input[@class='selectors-input jsSelector'])[1]"));
 		WebElement pwdElement = driver.findElement(By.id("pass"));
 		System.out.println("emailElenment: "+emailElement);
 		System.out.println("Password: "+pwdElement);

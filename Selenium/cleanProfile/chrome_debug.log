@@ -1,0 +1,6 @@
+[2760:7180:0819/215311.858:INFO:components\enterprise\browser\controller\chrome_browser_cloud_management_controller.cc:202] No machine level policy manager exists.
+[2760:7180:0819/215312.602:INFO:CONSOLE:10] "Uncaught TypeError: Cannot set properties of undefined (setting 'touchstart')", source: https://alada.vn/static/templates/version1/default/js/camera_1.4/scripts/jquery.mobile.customized.min.js (10)
+[2760:7180:0819/215313.102:INFO:CONSOLE:0] "<meta name="apple-mobile-web-app-capable" content="yes"> is deprecated. Please include <meta name="mobile-web-app-capable" content="yes">", source: https://alada.vn/?inttb=4 (0)
+[2760:7180:0819/215315.090:ERROR:components\device_event_log\device_event_log_impl.cc:198] [21:53:15.090] USB: usb_service_win.cc:105 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: Element not found. (0x490)
+[2760:2532:0819/215315.288:ERROR:google_apis\gcm\engine\registration_request.cc:291] Registration response error message: DEPRECATED_ENDPOINT
+[2760:2532:0819/215337.266:ERROR:google_apis\gcm\engine\registration_request.cc:291] Registration response error message: DEPRECATED_ENDPOINT
