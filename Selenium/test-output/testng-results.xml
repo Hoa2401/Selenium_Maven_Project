@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="3" total="4" passed="1" failed="0" skipped="0">
+<testng-results ignored="1" total="2" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-08-19T22:54:35 ICT" name="Default suite" finished-at="2025-08-19T22:54:38 ICT" duration-ms="2862">
+  <suite started-at="2025-08-26T17:57:10 ICT" name="Default suite" finished-at="2025-08-26T17:57:27 ICT" duration-ms="17142">
     <groups>
     </groups>
-    <test started-at="2025-08-19T22:54:35 ICT" name="Default test" finished-at="2025-08-19T22:54:38 ICT" duration-ms="2862">
-      <class name="automation.testsuite.BTVNDay14_Test">
-        <test-method is-config="true" signature="openBrowser()[pri:0, instance:automation.testsuite.BTVNDay14_Test@618b19ad]" started-at="2025-08-19T22:54:35 ICT" name="openBrowser" finished-at="2025-08-19T22:54:37 ICT" duration-ms="2164" status="PASS">
+    <test started-at="2025-08-26T17:57:10 ICT" name="Default test" finished-at="2025-08-26T17:57:27 ICT" duration-ms="17142">
+      <class name="automation.testsuite.BTVN_Day15_TEDU_Search">
+        <test-method is-config="true" signature="openBrowser()[pri:0, instance:automation.testsuite.BTVN_Day15_TEDU_Search@74235045]" started-at="2025-08-26T17:57:10 ICT" name="openBrowser" finished-at="2025-08-26T17:57:15 ICT" duration-ms="4866" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method signature="newLoginSuccessfully()[pri:0, instance:automation.testsuite.BTVNDay14_Test@618b19ad]" started-at="2025-08-19T22:54:37 ICT" name="newLoginSuccessfully" finished-at="2025-08-19T22:54:38 ICT" duration-ms="675" status="PASS">
+        <test-method signature="searchKeyWord()[pri:0, instance:automation.testsuite.BTVN_Day15_TEDU_Search@74235045]" started-at="2025-08-26T17:57:15 ICT" name="searchKeyWord" finished-at="2025-08-26T17:57:27 ICT" duration-ms="12249" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- newLoginSuccessfully -->
-      </class> <!-- automation.testsuite.BTVNDay14_Test -->
+        </test-method> <!-- searchKeyWord -->
+      </class> <!-- automation.testsuite.BTVN_Day15_TEDU_Search -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

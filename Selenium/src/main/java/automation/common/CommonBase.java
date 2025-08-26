@@ -32,7 +32,7 @@ public class CommonBase {
     options.addArguments("disable-popup-blocking");
 	driver = new ChromeDriver(options);
 	driver.get(Url);
-	driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(30));
+	driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(60));
 	driver.manage().window().maximize();
 	return driver;
 	}
@@ -40,7 +40,7 @@ public class CommonBase {
 		System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir") + "\\driver\\geckodriver.exe");
 		driver = new FirefoxDriver();
 		driver.get(Url);
-		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(30));
+		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(50));
 		driver.manage().window().maximize();
 		return driver;
 	}
