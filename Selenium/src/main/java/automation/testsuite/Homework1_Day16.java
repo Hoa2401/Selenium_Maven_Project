@@ -29,6 +29,9 @@ public class Homework1_Day16 extends CommonBase {
 		BTVN_Day16_Factory factory = new BTVN_Day16_Factory(driver);
 		factory.AddKLV("HN001", "KLV2402");
 		assertTrue(isElementDisplay(By.xpath("//p[text()='Quản lý khu làm việc']")));
+		driver.findElement(By.xpath("//input[@class='form-control me-3']")).sendKeys("KLV2402");
+		clickByJS(By.xpath("//button[text()='Tìm kiếm']"));
+		assertTrue(isElementDisplay(By.xpath("//td[@class='code-work-area']"))) ;	
 	}
 	
 	@Test(priority = 3)
@@ -36,7 +39,10 @@ public class Homework1_Day16 extends CommonBase {
 		LoginSuccessfully();
 		BTVN_Day16_Factory factory = new BTVN_Day16_Factory(driver);
 		factory.DeleteKLV("KLV2402");
-		assertTrue(isElementDisplay(By.xpath("//p[text()='Quản lý khu làm việc']")));		
+		assertTrue(isElementDisplay(By.xpath("//p[text()='Quản lý khu làm việc']")));
+		driver.findElement(By.xpath("//input[@class='form-control me-3']")).sendKeys("KLV2402");
+		clickByJS(By.xpath("//button[text()='Tìm kiếm']"));
+		assertTrue(isElementDisplay(By.xpath("//h4[text()='Không tìm thấy kết quả']"))) ;	
 	}
 
    @AfterMethod

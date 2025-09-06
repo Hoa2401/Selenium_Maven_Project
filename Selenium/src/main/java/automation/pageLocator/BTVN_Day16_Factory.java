@@ -46,9 +46,10 @@ public class BTVN_Day16_Factory {
 		btnThem.click();
 		
 	}
-	public void DeleteKLV(String nameKLV) {
+	public void DeleteKLV(String nameKLV) throws InterruptedException {
 		txtSearch.sendKeys(nameKLV);
 		btnTimKiem.click();
+		Thread.sleep(10000);
 		btnXoa.click();
 		String actual = driver.switchTo().alert().getText();
 		assertEquals(actual, "Bạn có thực sự muốn xóa khu vực này");

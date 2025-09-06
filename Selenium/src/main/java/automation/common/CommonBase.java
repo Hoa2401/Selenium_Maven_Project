@@ -3,12 +3,10 @@ import java.time.Duration;
 import java.util.HashMap;
 import java.util.Map;
 
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.*;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.*;
 
@@ -85,6 +83,13 @@ public class CommonBase {
 		WebElement element = getElementPresentDOM(locator);
 		element.clear();
 		element.sendKeys(value);	
+	}
+	//sử dụng hàm JS để click vào phần tử bị ẩn
+	public void clickByJS(By locator)
+	{
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		WebElement element = driver.findElement(locator);
+		js.executeScript("arguments[0].click();", element);
 	}
 
 	public void closeDriver()

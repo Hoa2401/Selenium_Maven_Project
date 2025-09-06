@@ -3,13 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="automation.testsuite.Homework1_Day16">
+      <class name="automation.testsuite.BTVN_Day17_Mediamart">
         <methods>
-          <include name="deleteKLVSuccessfully"/>
-          <include name="closeBrowser"/>
+          <include name="handleWidgetZalo"/>
           <include name="openBrowser"/>
         </methods>
-      </class> <!-- automation.testsuite.Homework1_Day16 -->
+      </class> <!-- automation.testsuite.BTVN_Day17_Mediamart -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
