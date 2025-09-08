@@ -2,15 +2,21 @@ package automation.testsuite;
 
 import java.time.Duration;
 import org.openqa.selenium.By;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Optional;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import automation.common.CT_PageURL;
 import automation.common.CommonBase;
 
 public class Day17_Practice_iFrame extends CommonBase {
 	@BeforeMethod
-	public void openBrowser() {
-		driver = initChromeDriver(CT_PageURL.CODESTAR_URL_HOMEPAGE);
+	@Parameters ("browser")
+	public void openBrowser(@Optional("chrome") String browser) {
+//		driver = initEdgeDriver(CT_PageURL.CODESTAR_SYSTEM_URL);
+		driver= setupDriver(browser);
+		driver.get(CT_PageURL.CODESTAR_URL_HOMEPAGE);
 	}
 	
 	@Test
@@ -25,6 +31,10 @@ public class Day17_Practice_iFrame extends CommonBase {
 		driver.findElement(By.id("email")).sendKeys("h001@gmail.com");
 		clickByJS(By.xpath("//button[normalize-space()='Gửi ngay']"));
 
+	}
+	@AfterMethod
+	public void closeBrowser() {
+		driver.close();
 	}
 
 }

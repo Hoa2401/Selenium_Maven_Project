@@ -20,4 +20,11 @@
 		<nature>org.eclipse.jdt.core.javanature</nature>
 		<nature>org.eclipse.m2e.core.maven2Nature</nature>
 	</natures>
+	<linkedResources>
+		<link>
+			<name>TestNG.xml</name>
+			<type>1</type>
+			<location>C:/Users/QuocAnh/Downloads/ff293ba6666f153295e1b5b737d7e7f8-404c0b7b46670daca90e15a98d2c369edcca61e7/ff293ba6666f153295e1b5b737d7e7f8-404c0b7b46670daca90e15a98d2c369edcca61e7/TestNG.xml</location>
+		</link>
+	</linkedResources>
 </projectDescription>

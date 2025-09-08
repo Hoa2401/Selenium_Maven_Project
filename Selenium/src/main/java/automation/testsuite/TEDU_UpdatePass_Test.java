@@ -4,6 +4,8 @@ import static org.testng.Assert.assertTrue;
 
 import org.openqa.selenium.By;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Optional;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import automation.common.CT_PageURL;
@@ -15,8 +17,10 @@ public class TEDU_UpdatePass_Test extends CommonBase {
 	
 	@BeforeMethod
 	public void openBrowser() {
-		driver = initFirefoxDriver(CT_PageURL.TEDU_URL);
-		tedu = new TEDU_Factory(driver);
+//		driver = initFirefoxDriver(CT_PageURL.TEDU_URL);
+//		tedu = new TEDU_Factory(driver);
+//		driver= setupDriver(browser);
+//		driver.get(CT_PageURL.TEDU_URL);
 	}
 	@Test
 	public void loginSuccessfully() throws InterruptedException {

@@ -15,7 +15,7 @@ public class Day17_Practice_popupWindow extends CommonBase {
 	
 	@BeforeMethod
 	public void openBrowser() {
-		driver = initChromeDriver(CT_PageURL.GURU_POPUP);
+		driver = initEdgeDriver(CT_PageURL.GURU_POPUP);
 	}
 	
 	@Test
